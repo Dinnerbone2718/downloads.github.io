@@ -3,16 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .header {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+    </style>
 </head>
-<body style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f5f5f5;">
-    <a href="https://github.com/Dinnerbone2718/gameDownloads/raw/main/rpg.zip" download>
-        <button style="padding: 15px 30px; font-size: 18px;">Download RPG (Test Build)</button>
-    </a>
-    
-    <a href="https://github.com/Dinnerbone2718/randFacts/raw/main/betterDisplay.zip" download>
-        <button style="padding: 15px 30px; font-size: 18px;">Random Facts</button>
-    </a>
-    
+<body>
+    <div class="container">
+        <div class="header">Project Downloads</div>
+        <a href="https://github.com/Dinnerbone2718/gameDownloads/raw/main/rpg.zip" download class="button">
+            Download RPG (Test Build)
+        </a>
+        <a href="https://github.com/Dinnerbone2718/randFacts/raw/main/betterDisplay.zip" download class="button">
+            Random Facts
+        </a>
+    </div>
 </body>
 </html>
